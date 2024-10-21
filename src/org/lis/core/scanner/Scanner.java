@@ -210,6 +210,8 @@ public class Scanner extends LisCompilationPass<LisFile, ScannedData> {
                 }
                 else if (match('/')){
                     comment();
+                } else {
+                    addToken(DIVIDE);
                 }
                 break;
             case '@':
