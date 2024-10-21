@@ -1,0 +1,186 @@
+import NameOfLibrary;
+
+
+void main(){
+
+}
+struct MyStruct {
+    float x;
+    float y;
+    float z;
+}
+
+class MyClass {
+    float x : get, set;
+    float y : get, set;
+    float z : get, set;
+
+
+    _constructor(float x, float y, float z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+    // Factories :
+    _constructor.NameOfConstructor(float x){
+        this.x = x;
+    }
+
+    public function void myMethod(){
+        // make anything
+    }
+
+     private function void myMethod(){
+            // make anything
+        }
+}
+
+class AnotherClass {
+    @private {
+    int x;
+    int y;
+    }
+
+    @public {
+      int v;
+    }
+
+    @protected {
+       //...
+    }
+
+    public int j;
+    private int z;
+}
+
+// abstract and interface
+
+abstract class MyAbs {
+    int x;
+
+    @abstractFunctions {
+        int myMethod();
+        float myMethod2();
+        float myMethod3();
+    }
+
+    function int getX(){
+        return x;
+    }
+
+}
+
+
+
+abstract class MyInterface{
+
+    @abstractFunctions {
+        int myMethod();
+        float myMethod2();
+        float myMethod3();
+    }
+
+
+}
+
+
+// herancas
+class MyChildrenClass (MyAbs) {
+    _constructor(float x, float y, float z) {
+    _super._constructor(x, y, z);
+    }
+}
+
+// Instantiate:
+var c = new MyClass(x, y, z);
+var c new MyClass.NameOfConstructor(x);
+
+
+// types and declaration:
+int x =0;
+boolean t = true;
+boolean t = 1;
+u_byte b = 255;
+byte b = 255;
+float j = 0.1;
+var any = Any();
+const int c = 1;
+string myString = "MyString";
+char character = 'c';
+
+
+
+// ternary:
+int x = if ( 1 === 1)  2 else  3;
+
+
+//
+while (true) {
+    continue;
+    break;
+}
+
+
+for (var x : xList) {
+    print(x);
+}
+
+
+// native functions:
+print();
+
+open("Write or Read", path) as w {
+    for (var l : word) {
+        w.write(l + "/n");
+    }
+}
+
+write(path, "Write This")
+read(path);
+input("");
+
+// maybe:
+map();
+filter();
+reduce();
+
+// functions:
+void myFunc(int x=2) {  // 2 is a default value
+
+}
+
+// lambdas:
+a = () => {};
+a = () => print("PRINT")
+printX = (int x) => print(x)
+
+
+
+// boolean expressions:
+boolean isTrue = !((a == 1) && b > 2 || (j>=2 && (5 +2) > v)) ;
+
+// math expressions:
+
+int x = 5 + 2;
+int x = 5 * 2;
+int x =  6**2;
+float x = x / 2;
+
+// conditions:
+if (booleanExpression) {
+}
+else if(booleanExpression2) {
+}
+else {
+}
+
+
+
+// arrays and hashmaps:
+
+
+int[] arrayInt =[];
+
+
+
+
